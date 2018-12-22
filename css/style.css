@@ -1,0 +1,22 @@
+.task1 {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: red; }
+  .task1 p {
+    font-size: 40px; }
+
+.task2 {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: red; }
+
+.task3 {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-bottom: 20px;
+  background-color: red; }

@@ -1,0 +1,47 @@
+$some-number:5px;
+$another-number:15px;
+$bgcolor:green;
+
+@mixin layout {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@function namravli( $some-number, $another-number){
+    @return ($some-number * $another-number) * 1px;
+  }
+.task1{
+    @include layout;
+    background-color: red;
+    p{
+        font-size: namravli(2,20)
+    }
+}
+
+@function foni($bgcolor){
+    @if ($bgcolor > 10) {
+        @return red;
+    }
+    @else{
+        @return yellow;
+    }
+}
+.task2{
+    @include layout;
+    background-color: foni(11);
+
+}
+@function foni($bgcolor){
+    @if ($bgcolor == witeli) {
+        @return red;
+    }
+    @else{
+        @return yellow;
+    }
+}
+.task3{
+    @include layout;
+    background-color: foni(witeli);
+}
